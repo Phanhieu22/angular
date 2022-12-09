@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .contentLogo {
+    height: 4em;
+    background-color: rgb(164, 164, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      padding-right: 2em;
+    }
+  }
+  .contentAside {
+    flex-grow: 3;
+    height: 100%;
+  }
+}

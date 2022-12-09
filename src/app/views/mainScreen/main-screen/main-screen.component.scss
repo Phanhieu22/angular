@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  .sideBar {
+    width: 20%;
+  }
+  .mainDashboard {
+    width: 80%;
+  }
+}

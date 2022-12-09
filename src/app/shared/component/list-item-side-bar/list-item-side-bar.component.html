@@ -1,0 +1,23 @@
+<div class="container" (click)="onChangeActive()">
+  <a
+    routerLink="/user/userList"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+  >
+    <div class="icon">
+      <img
+        src="	http://admin.mynailpop.com:7070/html/resources/images/common/nav/contents-inactive.svg"
+        alt=""
+      />
+    </div>
+    <div class="textContent">Content management</div>
+    <div class="arrow">
+      <img
+        class=""
+        src="	http://admin.mynailpop.com:7070/html/resources/images/common/nav/chevron-down-inactive.svg"
+        alt=""
+      />
+    </div>
+  </a>
+  <div *ngFor="let subNav of mockConfig.children" class="children"></div>
+</div>
