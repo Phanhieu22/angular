@@ -8,10 +8,24 @@
   </div>
   <ul class="contentAside">
     <li>
-      <app-item-side-bar> </app-item-side-bar>
-    </li>
-    <li>
-      <app-list-item-side-bar></app-list-item-side-bar>
+      <div
+        class="container"
+        *ngFor="let item of mockApiConfigNavBar"
+        class="children"
+      >
+        <div *ngIf="item.type === 'menuItem'">
+          <app-item-side-bar
+            [icon]="item.icon"
+            [title]="item.textNavContent"
+            [path]="item.path"
+          ></app-item-side-bar>
+        </div>
+        <ng-container *ngIf="item.type === 'group'">
+          <app-list-item-side-bar
+            [dataChildren]="item"
+          ></app-list-item-side-bar>
+        </ng-container>
+      </div>
     </li>
   </ul>
 </aside>

@@ -1,19 +1,22 @@
 .container {
-  padding: 0 0.5em;
   border: 1px snow solid;
-  a {
+  padding: 0 0 0.5em;
+
+  > .navParent {
+    cursor: pointer;
     height: 3em;
     display: flex;
     text-decoration: none;
     color: black;
     .icon {
-      flex-grow: 1;
       line-height: 3em;
       text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 1em;
+      width: 18px;
+      transform: rotate(0deg);
+      transition: 0.4s;
       padding-bottom: 0.2em;
     }
     .textContent {
@@ -21,14 +24,53 @@
       flex-grow: 10;
       font-size: 1.15em;
       font-weight: 600;
-      padding-left: 1em;
     }
     .arrow {
-      flex-grow: 2;
-      line-height: 3em;
       display: flex;
       align-items: center;
-      line-height: 3em;
+      justify-content: center;
+
+      width: 1.2em;
+      img {
+        width: 1.1em;
+      }
     }
+  }
+  .subMenu {
+    height: 0;
+  }
+
+  :hover {
+  }
+}
+
+// .subMenu {
+//   display: none;
+// }
+
+.hideDefault {
+  background: #fff;
+  overflow: hidden;
+  color: #000;
+  line-height: 50px;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+}
+.openSubMenu {
+  height: auto;
+}
+.animationActive {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-180deg);
+  transition: 0.4s;
+}
+@keyframes animation {
+  from {
+    height: auto;
+  }
+  to {
+    height: auto;
+    display: block !important;
   }
 }

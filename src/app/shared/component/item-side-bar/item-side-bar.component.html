@@ -1,16 +1,13 @@
 <div class="container">
   <a
-    routerLink="/user/userList"
+    routerLink="{{ path }}"
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
   >
     <div class="icon">
-      <img
-        src="http://admin.mynailpop.com:7070/html/resources/images/common/nav/profile-off.svg"
-        alt=""
-      />
+      <img src="icon" alt="" />
     </div>
-    <div class="textContent">Member management</div>
+    <div class="textContent">{{ title }}</div>
     <!-- <div class="arrow">a</div> -->
   </a>
 </div>

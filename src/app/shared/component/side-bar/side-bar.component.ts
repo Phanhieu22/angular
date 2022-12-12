@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
+import { mockApiConfigNavBar } from 'src/app/mockConfig/mockApiConfigNavBar';
 
 @Component({
   selector: 'app-side-bar',
@@ -6,25 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-bar.component.scss'],
 })
 export class SideBarComponent implements OnInit {
-  mockConfig = [
-    {
-      icon: '',
-      type: 'menuItem',
-      textNavContent: 'Member management',
-      path: 'user/userList',
-    },
-    {
-      icon: '',
-      type: 'listMenuItem',
-      textNavContent: 'Content management',
-      children: [
-        {
-          icon: '',
-        },
-      ],
-    },
-  ];
   constructor() {}
+  mockApiConfigNavBar = mockApiConfigNavBar;
 
-  ngOnInit(): void {}
+  ngVersion: string = VERSION.full;
+  matVersion: string = '5.1.0';
+  breakpoint: number;
+
+  ngOnInit() {
+    this.breakpoint = window.innerWidth <= 400 ? 1 : 6;
+  }
+
+  onResize(event: any) {
+    this.breakpoint = event.target.innerWidth <= 400 ? 1 : 6;
+  }
 }

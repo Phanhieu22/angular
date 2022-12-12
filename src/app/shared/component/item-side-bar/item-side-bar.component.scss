@@ -1,27 +1,30 @@
 .container {
-  padding: 0 0.5em;
   border: 1px snow solid;
+  padding: 0 0 0.5em;
   a {
     height: 3em;
     display: flex;
     text-decoration: none;
     color: black;
     .icon {
-      flex-grow: 1;
       line-height: 3em;
       text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 1em;
+      width: 18px;
       padding-bottom: 0.2em;
+      overflow: hidden;
     }
     .textContent {
       line-height: 2.45em;
       flex-grow: 10;
       font-size: 1.15em;
       font-weight: 600;
-      padding-left: 1em;
+
+      flex-wrap: wrap;
     }
+  }
+  :hover {
   }
 }

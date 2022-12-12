@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { mockApiConfigNavBar } from 'src/app/mockConfig/mockApiConfigNavBar';
+import { itemNavigation } from 'src/app/model/itemNavigation';
+import { ToggleService } from 'src/app/service/toggle.service';
 
 @Component({
   selector: 'app-list-item-side-bar',
@@ -6,31 +9,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-item-side-bar.component.scss'],
 })
 export class ListItemSideBarComponent implements OnInit {
-  constructor() {}
-  isActive = false;
+  @Input() dataChildren: any;
+  constructor(public toggle: ToggleService) {}
+  itemActive: any = [];
+  active = false;
 
-  onChangeActive() {
-    this.isActive = !this.isActive;
+  handleActive(id: number) {
+    this.toggle.setterIdActive(id);
+
+    // this case is closed
+    if (id === this.toggle.getterIdActive() && this.active == false) {
+      this.active = true;
+    } else {
+      this.active = false;
+    }
+
+    // this cased id open
   }
-
-  // a data like this
-  mockConfig = {
-    navTitle: 'content management',
-    children: [
-      {
-        titleChildren: 'main management',
-        path: 'children',
-      },
-      {
-        titleChildren: 'post management',
-        path: 'children',
-      },
-      {
-        titleChildren: 'Design management',
-        path: 'children',
-      },
-    ],
-  };
+  addItem(item: any) {
+    this.itemActive.push(item?.children);
+  }
 
   ngOnInit(): void {}
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SideBarComponent } from './side-bar.component';
+import { BasicChartsComponent } from './basic-charts.component';
 
-describe('SideBarComponent', () => {
-  let component: SideBarComponent;
-  let fixture: ComponentFixture<SideBarComponent>;
+describe('BasicChartsComponent', () => {
+  let component: BasicChartsComponent;
+  let fixture: ComponentFixture<BasicChartsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SideBarComponent ]
+      declarations: [ BasicChartsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SideBarComponent);
+    fixture = TestBed.createComponent(BasicChartsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,6 +20,4 @@ describe('SideBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  
 });

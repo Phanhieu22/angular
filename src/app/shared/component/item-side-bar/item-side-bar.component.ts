@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ItemSideBarComponent implements OnInit {
   @Input() icon: any = ''; // decorate the property with @Input()
   @Input() title: string = '';
+  @Input() path: string | undefined;
 
   constructor() {}
 

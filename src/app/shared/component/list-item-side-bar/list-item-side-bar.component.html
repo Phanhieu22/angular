@@ -1,23 +1,36 @@
-<div class="container" (click)="onChangeActive()">
-  <a
-    routerLink="/user/userList"
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page"
-  >
+<div class="container">
+  <div (click)="handleActive(dataChildren.id)" class="navParent">
     <div class="icon">
-      <img
-        src="	http://admin.mynailpop.com:7070/html/resources/images/common/nav/contents-inactive.svg"
-        alt=""
-      />
+      <img src="dataChildren.icon" alt="" />
     </div>
-    <div class="textContent">Content management</div>
+    <div class="textContent">{{ dataChildren.textNavContent }}</div>
     <div class="arrow">
       <img
-        class=""
+        [class.animationActive]="active"
         src="	http://admin.mynailpop.com:7070/html/resources/images/common/nav/chevron-down-inactive.svg"
         alt=""
       />
     </div>
-  </a>
-  <div *ngFor="let subNav of mockConfig.children" class="children"></div>
+  </div>
+  <div class="subMenu" class="hideDefault" [class.openSubMenu]="active">
+    <ng-container *ngFor="let item of dataChildren.children">
+      <ng-container *ngIf="item.type === 'group'">
+        <app-list-item-side-bar [dataChildren]="item"></app-list-item-side-bar>
+      </ng-container>
+      <ng-container *ngIf="item.type === 'menuItem'">
+        <app-item-side-bar
+          [icon]="item.icon"
+          [title]="item.textNavContent"
+          [path]="item.path"
+        ></app-item-side-bar>
+      </ng-container>
+      <ng-container *ngIf="item.type === 'finalItem'">
+        <app-item-side-bar
+          [icon]="item.icon"
+          [title]="item.textNavContent"
+          [path]="item.path"
+        ></app-item-side-bar>
+      </ng-container>
+    </ng-container>
+  </div>
 </div>
