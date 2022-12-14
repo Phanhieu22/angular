@@ -1,6 +1,6 @@
 import { autoGeneratesIdNumber } from '../tools/autoGeneratesIdNumber';
 
-export const mockApiConfigNavBar = [
+export const configNavBar = [
   {
     id: autoGeneratesIdNumber(),
     icon: '../../../assets/icon/profile-off.svg',
@@ -98,7 +98,7 @@ export const mockApiConfigNavBar = [
         icon: '',
         type: 'menuItem',
         textNavContent: 'Print count',
-        path: 'printAnalysis/printAnalysisStaticsCnt',
+        path: 'printAnalysis/printAnalysisCnt',
         children: [],
       },
       {

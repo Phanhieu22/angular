@@ -3,6 +3,7 @@
     routerLink="{{ path }}"
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
+    [routerLinkActiveOptions]="{ exact: true }"
   >
     <div class="icon">
       <ng-template [ngIf]="icon"> <img src="{{ icon }}" alt="" /></ng-template>

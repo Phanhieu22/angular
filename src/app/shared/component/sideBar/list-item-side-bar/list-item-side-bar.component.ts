@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { mockApiConfigNavBar } from 'src/app/mockConfig/mockApiConfigNavBar';
-import { itemNavigation } from 'src/app/model/itemNavigation';
 import { ToggleService } from 'src/app/service/toggle.service';
 
 @Component({

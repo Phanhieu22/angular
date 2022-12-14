@@ -1,5 +1,5 @@
 import { Component, OnInit, VERSION } from '@angular/core';
-import { mockApiConfigNavBar } from 'src/app/mockConfig/mockApiConfigNavBar';
+import { configNavBar } from 'src/app/config/configNavBar';
 
 @Component({
   selector: 'app-side-bar',
@@ -8,7 +8,7 @@ import { mockApiConfigNavBar } from 'src/app/mockConfig/mockApiConfigNavBar';
 })
 export class SideBarComponent implements OnInit {
   constructor() {}
-  mockApiConfigNavBar = mockApiConfigNavBar;
+  mockApiConfigNavBar = configNavBar;
 
   ngVersion: string = VERSION.full;
   matVersion: string = '5.1.0';
