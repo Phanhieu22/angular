@@ -1,5 +1,9 @@
 <div class="container">
-  <div (click)="handleActive(dataChildren.id)" class="navParent">
+  <div
+    (click)="handleActive(dataChildren.id)"
+    class="navParent"
+    [class.animationActive]="active"
+  >
     <div class="icon">
       <ng-template [ngIf]="dataChildren.icon">
         <img src="{{ dataChildren.icon }}" alt=""
@@ -7,11 +11,7 @@
     </div>
     <div class="textContent">{{ dataChildren.textNavContent }}</div>
     <div class="arrow">
-      <img
-        [class.animationActive]="active"
-        src="../../../assets/icon/chevron-down-inactive.svg"
-        alt=""
-      />
+      <img src="../../../assets/icon/chevron-down-inactive.svg" alt="" />
     </div>
   </div>
   <div class="subMenu" class="hideDefault" [class.openSubMenu]="active">

@@ -9,9 +9,13 @@
 }
 
 :root {
-  --mainBackground: background-image: linear-gradient(to right, #4f89e5 18%, #4f89e5 54%, #6fb1fc 99%);
-  --mainColor:#d8e8fc;
-  --colorTextNormal :#609ef1;
-  
-
+  --mainBackground: linear-gradient(
+    to right,
+    #4f89e5 18%,
+    #4f89e5 54%,
+    #6fb1fc 99%
+  );
+  --mainColor: #609ef1;
+  --colorTextNormal: #609ef1;
+  --subBackground: #d8e8fc;
 }

@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .conditionBox {
+    background-color: var(--subBackground);
+    width: 80%;
+    margin: auto;
+    .findByHardSection {
+      display: flex;
+    }
+    .findByTime {
+      display: flex;
+      flex-direction: row;
+      .period {
+      }
+      .month {
+      }
+    }
+    .wrapperButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

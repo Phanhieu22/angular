@@ -19,6 +19,12 @@ import { ItemSideBarComponent } from './shared/component/sideBar/item-side-bar/i
 import { PrintInformationComponent } from './views/printAnalysis/print-information/print-information.component';
 import { PrintCountComponent } from './views/printAnalysis/print-count/print-count.component';
 import { PrintErrorAnalysisComponent } from './views/printAnalysis/print-error-analysis/print-error-analysis.component';
+import { ConditionBoxModelAndRegionComponent } from './shared/component/condition-box-model-and-region/condition-box-model-and-region.component';
+import { ConditionBoxMacAndAccountTypeComponent } from './shared/component/condition-box-mac-and-account-type/condition-box-mac-and-account-type.component';
+import { ConditionBoxfindByPeriodTimeComponent } from './shared/component/condition-boxfind-by-period-time/condition-boxfind-by-period-time.component';
+import { ConditionBoxfindByMonthComponent } from './shared/component/condition-boxfind-by-month/condition-boxfind-by-month.component';
+import { ConditionFindPrintInfoComponent } from './shared/template/condition-find-print-info/condition-find-print-info.component';
+import { PrintInforChildrenComponent } from './shared/template/print-infor-children/print-infor-children.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +38,12 @@ import { PrintErrorAnalysisComponent } from './views/printAnalysis/print-error-a
     PrintInformationComponent,
     PrintCountComponent,
     PrintErrorAnalysisComponent,
+    ConditionBoxModelAndRegionComponent,
+    ConditionBoxMacAndAccountTypeComponent,
+    ConditionBoxfindByPeriodTimeComponent,
+    ConditionBoxfindByMonthComponent,
+    ConditionFindPrintInfoComponent,
+    PrintInforChildrenComponent,
   ],
   imports: [
     BrowserModule,
