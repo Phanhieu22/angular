@@ -6,10 +6,13 @@
   .contentLogo {
     height: 4em;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    border-bottom: 1px solid #ff1a7d;
     img {
-      padding-right: 2em;
+      padding-left: 1em;
+      padding-top: 1em;
+      height: 2em;
     }
   }
   .contentAside {
@@ -18,6 +21,4 @@
   }
 }
 
-
-
-// responsive in  break point 
+// responsive in  break point

@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ToggleService {
-  idActive: number = 0;
+  idActive: any = 0;
 
   setterIdActive(id: number) {
     console.log('is active :' + id);

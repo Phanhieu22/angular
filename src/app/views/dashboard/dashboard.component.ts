@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { car } from 'src/app/model/car';
 import { ToggleService } from 'src/app/service/toggle.service';
 
 @Component({

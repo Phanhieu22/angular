@@ -1,13 +1,15 @@
 <div class="container">
   <div (click)="handleActive(dataChildren.id)" class="navParent">
     <div class="icon">
-      <img src="dataChildren.icon" alt="" />
+      <ng-template [ngIf]="dataChildren.icon">
+        <img src="{{ dataChildren.icon }}" alt=""
+      /></ng-template>
     </div>
     <div class="textContent">{{ dataChildren.textNavContent }}</div>
     <div class="arrow">
       <img
         [class.animationActive]="active"
-        src="	http://admin.mynailpop.com:7070/html/resources/images/common/nav/chevron-down-inactive.svg"
+        src="../../../assets/icon/chevron-down-inactive.svg"
         alt=""
       />
     </div>

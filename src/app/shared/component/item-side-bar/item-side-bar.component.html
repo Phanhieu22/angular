@@ -5,7 +5,7 @@
     ariaCurrentWhenActive="page"
   >
     <div class="icon">
-      <img src="icon" alt="" />
+      <ng-template [ngIf]="icon"> <img src="{{ icon }}" alt="" /></ng-template>
     </div>
     <div class="textContent">{{ title }}</div>
     <!-- <div class="arrow">a</div> -->

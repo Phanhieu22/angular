@@ -1,10 +1,9 @@
 .container {
   border: 1px snow solid;
-  padding: 0 0 0.5em;
 
   > .navParent {
     cursor: pointer;
-    height: 3em;
+    height: 2.5em;
     display: flex;
     text-decoration: none;
     color: black;
@@ -14,23 +13,28 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 18px;
+      width: 3em;
       transform: rotate(0deg);
       transition: 0.4s;
       padding-bottom: 0.2em;
+      img {
+        width: 18px;
+        height: 18px;
+      }
     }
     .textContent {
       line-height: 2.45em;
       flex-grow: 10;
-      font-size: 1.15em;
+      font-size: 100%;
       font-weight: 600;
+      text-align: left;
     }
     .arrow {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      width: 1.2em;
+      width: 2em;
       img {
         width: 1.1em;
       }
@@ -55,9 +59,12 @@
   line-height: 50px;
   transition: all 0.5s ease-in-out;
   height: 0;
+  transform: rotate(0deg);
 }
 .openSubMenu {
   height: auto;
+  font-weight: 800;
+  color: #609ef1;
 }
 .animationActive {
   width: 100px;
@@ -65,12 +72,11 @@
   transform: rotate(-180deg);
   transition: 0.4s;
 }
-@keyframes animation {
+@keyframes backOnHide {
   from {
-    height: auto;
+    transform: rotate(-180deg);
   }
   to {
-    height: auto;
-    display: block !important;
+    transform: rotate(0deg);
   }
 }
