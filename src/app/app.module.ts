@@ -29,6 +29,8 @@ import { InputImageBoxComponent } from './shared/component/input-image-box/input
 import { ButtonSelectorImageBoxComponent } from './shared/component/button-selector-image-box/button-selector-image-box.component';
 import { SearchAndSelectMutipleImageBoxComponent } from './shared/component/search-and-select-mutiple-image-box/search-and-select-mutiple-image-box.component';
 import { ButtonImageBoxComponent } from './shared/component/button-image-box/button-image-box.component';
+import { SearchInputImageBoxComponent } from './shared/component/search-input-image-box/search-input-image-box.component';
+import { ItemInListImageBoxComponent } from './shared/component/item-in-list-image-box/item-in-list-image-box.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +54,8 @@ import { ButtonImageBoxComponent } from './shared/component/button-image-box/but
     ButtonSelectorImageBoxComponent,
     SearchAndSelectMutipleImageBoxComponent,
     ButtonImageBoxComponent,
+    SearchInputImageBoxComponent,
+    ItemInListImageBoxComponent,
   ],
   imports: [
     BrowserModule,
