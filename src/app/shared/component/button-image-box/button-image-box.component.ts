@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { buttonModel } from 'src/app/model/buttonModel';
 
 @Component({
@@ -9,13 +9,15 @@ import { buttonModel } from 'src/app/model/buttonModel';
 export class ButtonImageBoxComponent implements OnInit, buttonModel {
   constructor() {}
   // text, icon, width, height, typeButton
-  text = 'test';
-  color: string = '#424141';
-  icon: string = '';
-  width: number = 20;
-  height: number = 25;
-  background: string = 'rgba(217, 217, 217, 0.5)';
-  typeButton = 'outline';
+  @Input() text = 'test';
+  @Input() color: string = '#424141';
+  @Input() icon: string = '';
+  @Input() width: number = 20;
+  @Input() height: number = 25;
+  @Input() background: string = 'rgba(217, 217, 217, 0.5)';
+  @Input() typeButton = 'outline';
+
+  isOuline: boolean = false;
 
   ngOnInit(): void {}
 }

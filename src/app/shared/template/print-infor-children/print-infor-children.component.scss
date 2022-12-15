@@ -4,9 +4,9 @@
 
   .conditionBox {
     background-color: var(--subBackground);
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
-    width: 1056px;
+
     height: 369px;
     flex-grow: 0;
     border-radius: 30px;
@@ -18,13 +18,14 @@
     justify-content: space-evenly;
     .findByHardSection {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      width: 100%;
 
       .modelAndRegion {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 40%;
       }
       .macAndAccountType {
         display: flex;
@@ -36,9 +37,18 @@
     .findByTime {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+      height: 50px;
+      width: 90%;
+      margin: 0 auto;
       .period {
       }
       .month {
+        width: 50%;
       }
     }
     .wrapperButton {

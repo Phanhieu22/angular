@@ -1,0 +1,40 @@
+.search,
+.searchResult {
+  width: 200px;
+}
+.searchResult {
+  font-size: 16px;
+  .accountSearch {
+    margin: 5px 20px;
+    color: #959fa6;
+    font-weight: 400;
+  }
+}
+.search {
+  display: flex;
+  flex-basis: auto;
+  background-color: #f1f1f2;
+
+  height: 35px;
+  caret-color: rgb(254, 44, 85);
+  border-radius: 24px;
+  padding: 0 0 0 20px;
+  border: solid 1.5px transparent;
+  position: relative;
+  input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+    background: transparent;
+    outline: #818890;
+    padding: 0px;
+    width: 252px;
+    caret-color: rgb(254, 44, 85);
+    flex-grow: 2;
+    caret-color: var(--primary);
+  }
+  input:not(:placeholder-shown) ~ .btnIconSearch {
+    color: rgba(22, 24, 35, 0.75);
+  }
+}

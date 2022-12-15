@@ -1,52 +1,55 @@
 .wrapper {
-  width: 400px;
-  height: 180px;
-  flex-grow: 0;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 450px;
+  height: 190px;
   padding: 0 18px 0 29px;
   border-radius: 20px;
   box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.15);
   background-color: #fff;
 
   .macAddress {
-    min-height: 70px;
-
     display: flex;
     justify-content: space-between;
-    > .title {
-      flex-grow: 2;
+    align-items: center;
+    flex-grow: 1;
+    .title {
       display: flex;
       align-items: center;
       justify-content: center;
       letter-spacing: 0.5px;
       font-size: 20px;
       font-weight: 300;
-      min-width: 125px;
+      min-width: 183px;
+      border-right: #396ab8 3px solid;
+      height: 100%;
     }
-    > .selectBtn {
-      flex-grow: 10;
-      border-left: 3px solid #396ab8;
+    .input {
     }
   }
   .searchTestAccount {
-    min-height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    flex-grow: 2;
     > .title {
-      flex-grow: 2;
       display: flex;
       align-items: center;
       justify-content: center;
       letter-spacing: 0.5px;
       font-size: 20px;
       font-weight: 300;
-      min-width: 125px;
+      min-width: 135px;
+      border-right: #396ab8 3px solid;
+      height: 100%;
     }
-    > .selectBtn {
-      flex-grow: 10;
-      border-left: 3px solid #396ab8;
+    .input {
+      display: flex;
+      align-items: center;
     }
   }
+}
+.title {
+  padding-right: 1em;
 }

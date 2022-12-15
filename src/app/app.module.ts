@@ -31,6 +31,7 @@ import { SearchAndSelectMutipleImageBoxComponent } from './shared/component/sear
 import { ButtonImageBoxComponent } from './shared/component/button-image-box/button-image-box.component';
 import { SearchInputImageBoxComponent } from './shared/component/search-input-image-box/search-input-image-box.component';
 import { ItemInListImageBoxComponent } from './shared/component/item-in-list-image-box/item-in-list-image-box.component';
+import { ListRadioImageBoxComponent } from './shared/component/list-radio-image-box/list-radio-image-box.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import { ItemInListImageBoxComponent } from './shared/component/item-in-list-ima
     ButtonImageBoxComponent,
     SearchInputImageBoxComponent,
     ItemInListImageBoxComponent,
+    ListRadioImageBoxComponent,
   ],
   imports: [
     BrowserModule,

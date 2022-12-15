@@ -1,0 +1,28 @@
+.wrapper {
+  width: 75.4px;
+  height: 32.7px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border: solid 1.5px transparent;
+
+  align-items: center;
+  .icon {
+    // width: 20px;
+  }
+  .text {
+    text-align: center;
+    padding: 0.5em;
+  }
+  &:hover {
+    border: solid 1.5px #396ab8;
+  }
+}
+
+// style for props
+
+.outline {
+  border: solid 1.5px #396ab8;
+}
