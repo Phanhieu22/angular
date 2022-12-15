@@ -25,6 +25,10 @@ import { ConditionBoxfindByPeriodTimeComponent } from './shared/component/condit
 import { ConditionBoxfindByMonthComponent } from './shared/component/condition-boxfind-by-month/condition-boxfind-by-month.component';
 import { ConditionFindPrintInfoComponent } from './shared/template/condition-find-print-info/condition-find-print-info.component';
 import { PrintInforChildrenComponent } from './shared/template/print-infor-children/print-infor-children.component';
+import { InputImageBoxComponent } from './shared/component/input-image-box/input-image-box.component';
+import { ButtonSelectorImageBoxComponent } from './shared/component/button-selector-image-box/button-selector-image-box.component';
+import { SearchAndSelectMutipleImageBoxComponent } from './shared/component/search-and-select-mutiple-image-box/search-and-select-mutiple-image-box.component';
+import { ButtonImageBoxComponent } from './shared/component/button-image-box/button-image-box.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +48,10 @@ import { PrintInforChildrenComponent } from './shared/template/print-infor-child
     ConditionBoxfindByMonthComponent,
     ConditionFindPrintInfoComponent,
     PrintInforChildrenComponent,
+    InputImageBoxComponent,
+    ButtonSelectorImageBoxComponent,
+    SearchAndSelectMutipleImageBoxComponent,
+    ButtonImageBoxComponent,
   ],
   imports: [
     BrowserModule,

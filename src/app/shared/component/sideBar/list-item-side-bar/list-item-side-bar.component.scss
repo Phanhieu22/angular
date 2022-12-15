@@ -63,10 +63,14 @@
 }
 .openSubMenu {
   height: auto;
-  font-weight: 800 !important;
+  font-weight: 600 !important;
   color: #609ef1 !important;
 }
 .animationActive {
+  .textContent {
+    font-weight: 800 !important;
+    color: #609ef1 !important;
+  }
   .arrow {
     img {
       transform: rotate(-180deg);

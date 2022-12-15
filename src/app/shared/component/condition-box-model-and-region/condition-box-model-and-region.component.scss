@@ -1,0 +1,50 @@
+.wrapper {
+  width: 100%;
+  height: 180px;
+  flex-grow: 0;
+
+  border-radius: 20px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  .model {
+    min-height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    > .title {
+      flex-grow: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.5px;
+      font-size: 20px;
+      font-weight: 300;
+      min-width: 125px;
+    }
+    > .selectBtn {
+      flex-grow: 10;
+      border-left: 3px solid #396ab8;
+    }
+  }
+  .region {
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    > .title {
+      flex-grow: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.5px;
+      font-size: 20px;
+      font-weight: 300;
+      min-width: 125px;
+    }
+    > .selectBtn {
+      flex-grow: 10;
+      border-left: 3px solid #396ab8;
+    }
+  }
+}

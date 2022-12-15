@@ -1,0 +1,32 @@
+.wrapper {
+  width: 86.5px;
+  height: 21.8px;
+  flex-grow: 0;
+  margin: 20px 97.7px 17.8px 27.6px;
+  padding: 6.6px 14.3px 6.6px 18.6px;
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.5);
+  .contentBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .text {
+      flex-grow: 10;
+      text-align: center;
+      color: var(--main-text-color);
+      h3 {
+        font-weight: 300;
+      }
+    }
+    .icon {
+      height: 100%;
+      flex-grow: 2;
+      display: flex;
+      align-items: center;
+      img {
+        height: 18px;
+      }
+    }
+  }
+}
