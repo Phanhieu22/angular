@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-condition-boxfind-by-period-time',
@@ -7,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConditionBoxfindByPeriodTimeComponent implements OnInit {
   date = 12;
+  range = new FormGroup({
+    start: new FormControl<Date | null>(null),
+    end: new FormControl<Date | null>(null),
+  });
   constructor() {}
 
   ngOnInit(): void {}

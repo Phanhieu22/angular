@@ -16,6 +16,7 @@ export class ButtonImageBoxComponent implements OnInit, buttonModel {
   @Input() height: number = 25;
   @Input() background: string = 'rgba(217, 217, 217, 0.5)';
   @Input() typeButton = 'outline';
+  @Input() classCustom: string;
 
   isOutline: boolean = false;
 

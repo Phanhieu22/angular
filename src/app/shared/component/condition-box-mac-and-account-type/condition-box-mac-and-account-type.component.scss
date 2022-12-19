@@ -17,11 +17,10 @@
     .title {
       display: flex;
       align-items: center;
-      justify-content: center;
       letter-spacing: 0.5px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 300;
-      min-width: 183px;
+      min-width: 193px;
       border-right: #396ab8 3px solid;
       height: 100%;
     }
@@ -36,20 +35,18 @@
     > .title {
       display: flex;
       align-items: center;
-      justify-content: center;
       letter-spacing: 0.5px;
       font-size: 20px;
       font-weight: 300;
-      min-width: 135px;
+      width: 193px;
       border-right: #396ab8 3px solid;
       height: 100%;
     }
     .input {
       display: flex;
       align-items: center;
+      flex-direction: column;
+      justify-content: center;
     }
   }
-}
-.title {
-  padding-right: 1em;
 }

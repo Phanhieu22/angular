@@ -1,0 +1,78 @@
+.wrapper {
+  max-width: 634px;
+  max-height: 536px;
+  margin: auto !important;
+  margin-top: 2.5em !important;
+  padding: 24px 48px 42;
+  background-color: #fafafa;
+  height: 100%;
+  .container {
+    margin: auto;
+  }
+
+  .logoImage {
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+    .logoIcon {
+      padding-bottom: 40px;
+    }
+  }
+  .formFillData {
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .inputElement {
+      height: 100px;
+    }
+  }
+}
+
+.inputBox {
+  width: 80%;
+  border: 1px #71a7ff solid !important;
+  display: flex;
+  flex-basis: auto;
+  background-color: #f1f1f2;
+
+  height: 55px;
+  caret-color: rgb(254, 44, 85);
+  border-radius: 12px;
+  margin: 1em 0 !important;
+  position: relative;
+  input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    border: none;
+    background: transparent;
+    outline: #818890;
+    padding-left: 1em !important;
+
+    width: 600px;
+    caret-color: rgb(254, 44, 85);
+    flex-grow: 2;
+    caret-color: var(--primary);
+  }
+  input:not(:placeholder-shown) ~ .btnIconSearch {
+    color: rgba(22, 24, 35, 0.75);
+  }
+}
+.submitBtn {
+  height: 55px;
+  padding: 0.8em 0px;
+  margin: 1em 0;
+
+  border-radius: 30px;
+  width: 80%;
+  background-color: #ff1a7d;
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none !important;
+  :hover {
+  }
+}

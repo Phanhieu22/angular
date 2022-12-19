@@ -1,21 +1,16 @@
-@use "@angular/material" as mat;
+::ng-deep .mat-flat-button {
+  background-color: #fff !important;
+  color: var(--main-text-color) !important;
+  width: 85.4px;
+  height: 32.7px;
+  text-align: center !important;
 
-$custom-primary: mat.define-palette(mat.$pink-palette, 700, 500, 900);
-$custom-accent: mat.define-palette(mat.$blue-grey-palette, A200, A100, A400);
-
-$custom-theme: mat.define-dark-theme(
-  (
-    color: (
-      primary: $custom-primary,
-      accent: $custom-accent,
-    ),
-  )
-);
-
-.custom-theme {
-  @include mat.button-theme($custom-theme);
-  @include mat.progress-spinner-theme($custom-theme);
-}
-.customs {
-  background-color: red;
+  span {
+    padding: 8px 16px !important;
+    border-radius: 15px;
+    border: solid 1.5px transparent;
+  }
+  :hover {
+    border: solid 1.5px #396ab8;
+  }
 }

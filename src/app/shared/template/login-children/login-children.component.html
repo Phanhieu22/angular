@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="logoImage">
+      <app-logo class="logoIcon" [height]="64" [width]="64"></app-logo>
+      <app-logo-text></app-logo-text>
+    </div>
+    <form class="formFillData">
+      <div class="inputBox">
+        <input
+          type="text"
+          placeholder="{{ placeholderId }}"
+          spellCheck="{false}"
+          class="searchInput"
+          width="width"
+          height="height"
+        />
+        <div class="messageError"></div>
+      </div>
+      <div class="inputBox">
+        <input
+          type="text"
+          placeholder="{{ placeholderPass }}"
+          spellCheck="{false}"
+          class="searchInput"
+          width="width"
+          height="height"
+        />
+        <div class="messageError"></div>
+      </div>
+      <button class="submitBtn" type="submit" name="submit">Login</button>
+    </form>
+  </div>
+</div>

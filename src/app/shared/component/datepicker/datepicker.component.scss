@@ -1,0 +1,14 @@
+.swapper {
+  // margin-top: 20px;
+  border-radius: 20px !important;
+  margin-bottom: 5px;
+}
+::ng-deep.dateTime {
+  background-color: #fff !important;
+  height: 60px !important;
+  font-size: 24px !important;
+  zoom: 0.5 !important;
+}
+::ng-deep.mat-form-field-appearance-fill {
+  background-color: #fff !important;
+}

@@ -1,3 +1,40 @@
-.swapper {
-  width: 12px;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding: 0 1em;
+
+  h4 {
+    display: block;
+    margin-right: 2em !important;
+  }
+  .datepicker {
+    display: flex;
+    position: relative;
+    .date {
+      z-index: 20;
+      margin: 0 1em;
+    }
+    .middleLine {
+      height: 2px;
+      width: 25px;
+      transform: translateY(-50%);
+      position: absolute;
+      left: 46%;
+      top: 50%;
+      background-color: black;
+    }
+  }
+  .datepicker :last-child {
+    margin-left: 1em;
+  }
+}
+
+::ng-deep .example-full-width {
+  background-color: #fff !important;
+  height: 100% !important;
+  display: flex !important ;
 }

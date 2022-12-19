@@ -1,7 +1,8 @@
-<mat-form-field appearance="fill">
-  <mat-label>Value binding</mat-label>
-  <input matInput [matDatepicker]="picker3" />
-  <mat-hint>MM/DD/YYYY</mat-hint>
-  <mat-datepicker-toggle matIconSuffix [for]="picker3"></mat-datepicker-toggle>
-  <mat-datepicker #picker3></mat-datepicker>
-</mat-form-field>
+<div class="wrapper">
+  <h4>Period</h4>
+  <div class="datepicker">
+    <app-datepicker class="date"></app-datepicker>
+    <div class="middleLine"></div>
+    <app-datepicker class="date"></app-datepicker>
+  </div>
+</div>
