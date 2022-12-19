@@ -17,7 +17,7 @@ export class ButtonImageBoxComponent implements OnInit, buttonModel {
   @Input() background: string = 'rgba(217, 217, 217, 0.5)';
   @Input() typeButton = 'outline';
 
-  isOuline: boolean = false;
+  isOutline: boolean = false;
 
   ngOnInit(): void {}
 }

@@ -9,14 +9,29 @@
 }
 
 :root {
-  --mainBackground: linear-gradient(
-    to right,
-    #4f89e5 18%,
-    #4f89e5 54%,
-    #6fb1fc 99%
-  );
+  --mainBackground: #eff3f8;
   --mainColor: #609ef1;
   --colorTextNormal: #609ef1;
   --subBackground: #d8e8fc;
   --main-text-color: #424141;
+}
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+  color: #155724;
+}
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+  background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #155724;
+}
+
+.mat-icon-button.mat-success {
+  color: #155724;
 }

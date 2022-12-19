@@ -11,7 +11,7 @@
     flex-grow: 0;
     border-radius: 30px;
 
-    box-shadow: 0 7px 14px 0 #4f89e5;
+    box-shadow: 0 11px 1px -6px rgba(79, 137, 229, 0.35);
     background-color: #d8e8fc;
     display: flex;
     flex-direction: column;
@@ -57,4 +57,26 @@
       justify-content: center;
     }
   }
+  .table {
+    margin: auto;
+    min-width: 1050px;
+  }
+}
+
+.demo-table {
+  width: 100%;
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  border-color: currentColor;
+}
+
+.demo-row-is-clicked {
+  font-weight: bold;
 }

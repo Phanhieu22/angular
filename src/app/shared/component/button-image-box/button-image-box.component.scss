@@ -1,28 +1,21 @@
-.wrapper {
-  width: 75.4px;
-  height: 32.7px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  border: solid 1.5px transparent;
+@use "@angular/material" as mat;
 
-  align-items: center;
-  .icon {
-    // width: 20px;
-  }
-  .text {
-    text-align: center;
-    padding: 0.5em;
-  }
-  &:hover {
-    border: solid 1.5px #396ab8;
-  }
+$custom-primary: mat.define-palette(mat.$pink-palette, 700, 500, 900);
+$custom-accent: mat.define-palette(mat.$blue-grey-palette, A200, A100, A400);
+
+$custom-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $custom-primary,
+      accent: $custom-accent,
+    ),
+  )
+);
+
+.custom-theme {
+  @include mat.button-theme($custom-theme);
+  @include mat.progress-spinner-theme($custom-theme);
 }
-
-// style for props
-
-.outline {
-  border: solid 1.5px #396ab8;
+.customs {
+  background-color: red;
 }

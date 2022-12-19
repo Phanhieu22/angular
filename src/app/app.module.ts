@@ -32,6 +32,12 @@ import { ButtonImageBoxComponent } from './shared/component/button-image-box/but
 import { SearchInputImageBoxComponent } from './shared/component/search-input-image-box/search-input-image-box.component';
 import { ItemInListImageBoxComponent } from './shared/component/item-in-list-image-box/item-in-list-image-box.component';
 import { ListRadioImageBoxComponent } from './shared/component/list-radio-image-box/list-radio-image-box.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +70,12 @@ import { ListRadioImageBoxComponent } from './shared/component/list-radio-image-
     AppRoutingModule,
     MatGridListModule,
     NgApexchartsModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
